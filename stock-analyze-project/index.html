@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analyzer</title>
+    <!-- Updated FontAwesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><i class="fa-solid fa-chart-line"></i> stockScore</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <div class="header-section">
+                <h1>Stock Analyzer</h1>
+                <p class="subtitle">Enter a stock symbol to run a technical heuristic evaluation.</p>
+            </div>
+
+            <div class="search-box">
+                <div class="search-container">
+                    <input id="stock-input" type="text" placeholder="Enter symbol (e.g. AAPL, TSLA)" autocomplete="off">
+                    <i class="fa fa-search" id="search-icon"></i>
+                </div>
+                <button id="search-button">Click here to Analyze</button>
+            </div>
+
+            <div id="result"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
